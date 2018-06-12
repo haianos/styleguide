@@ -5110,7 +5110,7 @@ declaration:</p>
 // and avoid the extra seek.
 Iterator* GetIterator() const;
 </pre></del>
-
+<strong>
 <pre>
 /** \brief Factory method that return a pointer to an object of type Parameter T.
            T has to equal the parameter type that is registered under name 'parameterName', otherwise the
@@ -5123,6 +5123,7 @@ Iterator* GetIterator() const;
 template &lt;typename T&gt;
 Parameter&lt;T&gt;* getParameter(const std::string& parameterName);
 </pre>
+</strong>
 
 <p>However, do not be unnecessarily verbose or state the
 completely obvious.</p>
