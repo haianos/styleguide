@@ -4082,10 +4082,11 @@ and actionable from a user point of view.</p>
 <h3 id="Boost">Boost</h3>
 
 <div class="summary">
-<p>Use only approved libraries from the Boost library
-collection.</p>
+<p><strong>You are allowed to use all boost libraries, however favour STL (e.g. smart pointers and threading).</strong>
+  <del>Use only approved libraries from the Boost library
+collection.</del></p>
 </div>
-
+<del>
 <div class="stylebody">
 
 <div class="definition">
@@ -4202,7 +4203,7 @@ standard libraries in C++11:</p>
 </div>
 
 </div>
-
+</del>
 
 
 <h3 id="std_hash">std::hash</h3>
@@ -4598,11 +4599,26 @@ local pattern to follow, prefer "_".</del></p>
 <p>Examples of acceptable file names:</p>
 
 <ul>
-  <li><del><code>my_useful_class.cc</code></del> <strong>MyUsefulClass.cpp</strong></li>
-  <li><del><code>my-useful-class.cc</code></del></li>
-  <li><del><code>myusefulclass.cc</code></del></li>
-  <li><strong><code>my_useful_methods.cpp</code></strong></li>
-  <li><code>myusefulclass_test.<del>cc</del><strong>cpp</strong> // _unittest and _regtest are deprecated.</code></li>
+  <li> <strong>Class files:</strong>
+  <ul>
+    <li> <strong><code>MyUsefulClass.cpp</code></strong> </li>
+    <li> <del><code>my_useful_class.cc</code></del> </li>
+    <li> <del><code>my-useful-class.cc</code></del> </li>
+    <li> <del><code>myusefulclass.cc</code></del> </li>
+  </ul>
+  <li> <strong>Other files:</strong>
+  <ul>
+    <li> <strong><code>my_useful_methods.cpp</code></strong></li>
+    <li> <del><code>my-useful-methods.cc</code></del></li>
+    <li> <del><code>myusefulmethods.cc</code></del></li>
+  </ul>
+  <li> <strong>Test files:</strong>
+  <ul>
+    <li> <strong><code>MyUsefulClass_test.cpp</code></strong></li>
+    <li> <strong><code>my_useful_methods_test.cpp</code></strong></li>
+    <li> <del><code>myusefulclass_test.cc</code></del></li>
+  </ul>
+  </li>
 </ul>
 
 <p>C++ files should end in <del><code>.cc</code></del> <strong><code>.cpp</code></strong> and header files should end in
@@ -4728,13 +4744,13 @@ versus a class.</p>
 </div>
 
 <h3 id="Constant_Names">Constant Names</h3>
-  <del>
-<div class="summary">
-  <p><del>Variables declared constexpr or const, and whose value is fixed for
-  the duration of the program, are named with a leading "k" followed
-  by mixed case.  For example:</p>
-</div>
 
+<div class="summary">
+  <p><strong>Same naming rules as for non-const variables apply.</strong> <del>Variables declared constexpr or const, and whose value is fixed for
+  the duration of the program, are named with a leading "k" followed
+  by mixed case.  For example:</del></p>
+</div>
+<del>
 <pre>const int kDaysInAWeek = 7;
 </pre>
 
