@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Google C++ Style Guide</title>
+<title>ANYmal Research C++ Style Guide</title>
 <link rel="stylesheet" href="include/styleguide.css">
 <script src="include/styleguide.js"></script>
 <link rel="shortcut icon" href="https://www.google.com/favicon.ico">
 </head>
 <body onload="initStyleGuide();">
 <div id="content">
-<h1>Google C++ Style Guide<font color="#8B008B"> for RSL / ANYbotics</font></h1>
+<h1>ANYmal Research C++ Style Guide</h1>
 <div class="horizontal_toc" id="tocDiv"></div>
 
 <div class="main_body">
@@ -36,28 +36,28 @@ bit of a misnomer, since these conventions cover far more than
 just source file formatting.</p>
 
 <p>
-Most Robotic Systems Lab (RSL) code conforms to the requirements in this guide.
-Where RSL-specific rules contradict previous Google conventions, the text is retained for reference but otherwise marked with a <del>strikethrough</del>.
+Most ANYmal Research code conforms to the requirements in this guide.
+Where specific rules contradict previous Google conventions, the text is retained for reference but otherwise marked with a <del>strikethrough</del>.
 The style is intentionally difficult to read in the normal course of perusal.
 Copying-and-pasting, or even simply highlighting the text, will facilitate reading if necessary.
-Rules specific to RSL <strong>are highlighted like this</strong> for clarity and easier maintainability.
+Rules specific to ANYmal Research <strong>are highlighted like this</strong> for clarity and easier maintainability.
 </p>
 
 <p>Note that this guide is not a C++ tutorial: we assume that
 the reader is familiar with the language. </p>
 
-<h3 class="ignoreLink" id="remarks_rsl">RSL-specific Remarks</h3>
+<h3 class="ignoreLink" id="remarks_anymal_research">ANYmal Research specific Remarks</h3>
 
-<h5 class="ignoreLink" id="file_extensions_rsl">File Extensions</h5>
+<h5 class="ignoreLink" id="file_extensions_anymal_research">File Extensions</h5>
 <strong><p>
-At RSL we use different file extensions than the ones used in the remainder of this style guide.
-Use the following table to convert Google extensions to their RSL counterparts.
+We use different file extensions than the ones used in the remainder of this style guide.
+Use the following table to convert Google extensions to their ANYmal Research counterparts.
 </p>
 
 <table style="width:200pt">
   <tr>
     <td><b>Google</b></td>
-    <td><b>RSL</b></td>
+    <td><b>ANYmal Research</b></td>
   </tr>
   <tr>
     <td>example.cc</td>
@@ -73,15 +73,15 @@ Use the following table to convert Google extensions to their RSL counterparts.
   </tr>
 </table>
 </strong>
-<h5 class="ignoreLink" id="naming_rsl">Naming</h5>
+<h5 class="ignoreLink" id="naming_anymal_research">Naming</h5>
 <strong>
 <p>
-The given examples do not necessarily comply with the RSL style guide. Check the <a href="#Naming">Naming</a> section for details on RSL naming conventions.
+The given examples do not necessarily comply with the ANYmal Research style guide. Check the <a href="#Naming">Naming</a> section for details on ANYmal Research naming conventions.
 </p>
 </strong>
-<h5 class="ignoreLink" id="issues_rsl">Issue Tracking</h5>
+<h5 class="ignoreLink" id="issues_anymal_research">Issue Tracking</h5>
 <strong><p>
-If some points are unclear or you don't agree with some of the decisions, add an entry in the <a href="https://github.com/leggedrobotics/styleguide/issues
+If some points are unclear or you don't agree with some of the decisions, add an entry in the <a href="https://github.com/anybotics/styleguide/issues
 ">issue tracker</a>.
 </p></strong>
 
@@ -558,8 +558,8 @@ might look like this:</p>
 #include &lt;boost/thread/shared_mutex.hpp&gt;
 #include &lt;Eigen/Core&gt;
 
-#include &lt;other_rsl_pkg1/Command.hpp&gt;
-#include &lt;other_rsl_pkg2/PIDController.hpp&gt;
+#include &lt;other_anymal_research_pkg1/Command.hpp&gt;
+#include &lt;other_anymal_research_pkg2/PIDController.hpp&gt;
 
 #include "awesome_controller_pkg/control_helpers.hpp"
 #include "awesome_controller_pkg/typedefs.hpp"
@@ -2496,7 +2496,7 @@ tool. False positives can be ignored by putting <code>//
 NOLINT</code> at the end of the line or
 <code>// NOLINTNEXTLINE</code> in the previous line.</p>
 
-<a href="https://bitbucket.org/leggedrobotics/clang_tools">Check the README on the bitbucket repo.</a>
+<a href="https://code.anymal.com/anymal-research/anymal_research/tree/master/infrastructure/development/clang_tools">Check the README.</a>
 </strong>
 
 </div>
@@ -5003,7 +5003,7 @@ Every file must contain a doxygen header of the following form. In .cpp files th
 <pre>
 /**
  * @authors     Max Muster
- * @affiliation RSL
+ * @affiliation ANYmal Research Institution
  * @brief       Implementation of a PID-Controller.
  */
 </pre>
