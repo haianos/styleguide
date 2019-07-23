@@ -1,5 +1,5 @@
-RSL Style Guides
-===================
+ANYmal Research Style Guides
+============================
 
 Every major open-source project has its own style guide: a set of conventions
 (sometimes arbitrary) about how to write code for that project. It is much
@@ -8,9 +8,9 @@ consistent style.
 
 “Style” covers a lot of ground, from “use camelCase for variable names” to
 “never use global variables” to “never use exceptions.” This project
-([leggedrobotics/styleguide](https://github.com/leggedrobotics/styleguide)) links to the
-style guidelines we use for RSL code. If you are modifying a project that
-originated at RSL, you may be pointed to this page to see the style guides
+([anybotics/styleguide](https://github.com/anybotics/styleguide)) links to the
+style guidelines we use for ANYmal Research code. If you are modifying a project that
+originated from ANYmal Research, you may be pointed to this page to see the style guides
 that apply to that project.
 
 This project holds the [C++ Style Guide][cpp].
@@ -19,9 +19,6 @@ The style guides in this project are licensed under the CC-By 3.0 License,
 which encourages you to share these documents.
 See [https://creativecommons.org/licenses/by/3.0/][ccl] for more details.
 
-The following Google style guides live outside of this project:
-[Go Code Review Comments][go] and [Effective Dart][dart].
-
 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
 
-[cpp]: https://leggedrobotics.github.io/styleguide/cppguide.html
+[cpp]: https://anybotics.github.io/styleguide/cppguide.html
