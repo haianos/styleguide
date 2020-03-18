@@ -4729,11 +4729,13 @@ are named like ordinary nonmember variables, <strong>but with a
 trailing underscore.</strong> <del>They do not have
 the trailing underscores that data members in classes have.</del></p>
 
-<pre>struct TableInfo {
-  <del>string table_name_;  // OK - underscore at end.</del>
-  <strong>string tableName_;  // OK - underscore at end.</strong>
-  string tablename_;   // OK.
-  static Pool&lt;TableInfo&gt;* pool_;  // OK.
+<pre>struct UrlTableProperties {
+  <del>string name;<del>
+  <strong>string name_;</strong>
+  <del>int num_entries;</del>
+  <strong>int numEntries_;</strong>
+  <del>static Pool&lt;UrlTableProperties&gt;* pool;</del>
+  <strong>static Pool&lt;UrlTableProperties&gt;* pool_;</strong>
 };
 </pre>
 
