@@ -4378,14 +4378,17 @@ trailing underscore.</p>
 <h4>Struct Data Members</h4>
 
 <p>Data members of structs, both static and non-static,
-are named like ordinary nonmember variables. They do not have
-the trailing underscores that data members in classes have.</p>
+are named like ordinary nonmember variables, <strong>but with a
+trailing underscore.</strong> <del>They do not have
+the trailing underscores that data members in classes have.</del></p>
 
 <pre>struct UrlTableProperties {
-  std::string name;
+  <del>std::string name;</del>
+  <strong>std::string name_;</strong>
   <del>int num_entries;</del>
-  <strong>int numEntries;</strong>
-  static Pool&lt;UrlTableProperties&gt;* pool;
+  <strong>int numEntries_;</strong>
+  <del>static Pool&lt;UrlTableProperties&gt;* pool;</del>
+  <strong>static Pool&lt;UrlTableProperties&gt;* pool_;</strong>
 };
 </pre>
 
