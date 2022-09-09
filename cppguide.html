@@ -4360,7 +4360,7 @@ std::string tablename;   // OK - all lowercase.
 
 <h4>Class Data Members</h4>
 
-<p>Private and protected data members of classes, both static and non-static, are
+<p><del>Data</del><strong>Private and protected</strong> data members of classes, both static and non-static, are
 named like ordinary nonmember variables, but with a
 trailing underscore.</p>
 
@@ -4368,7 +4368,11 @@ trailing underscore.</p>
   ...
  protected:
    <del>std::string ownerName; // NOT OK - trailing underscore missing.
-   std::string tableName_; 
+ public:
+  <del>std::string publicVariable_; // NOT OK - trailing underscore for public member variables.</del>
+  <strong>std::string publicVariable; // OK - no trailing underscore for public member variables.</strong>
+ protected:
+  std::string protectedMember_;  // OK - underscore at end.
  private:
   <del>std::string table_name_;  // OK - underscore at end.</del>
   <strong>std::string tableName_;  // OK - underscore at end.</strong>
@@ -4377,23 +4381,22 @@ trailing underscore.</p>
 };
 </pre>
 
-<p><strong>Public</strong> data members of classes do not have the trailing underscore.</p>
+<p><strong>Public data members of classes do not have the trailing underscore.</strong></p>
 
-<p>In short, the presence of the trailing underscore semantics indicate whether the member variable is public or not.</p>
+<p><strong>In short, the presence of the trailing underscore semantics indicate whether the member variable is public or not.</strong></p>
 
 <h4>Struct Data Members</h4>
 
-<p>Data members of structs, both static and non-static,
-are named like ordinary nonmember variables. They do not have
-the trailing underscores that private and protected data members in classes have, since they are all public.</p>
+<p><strong>Data members of structs are named according to the same rule as data members of classes.</strong></p>
+<p><del>Data members of structs, both static and non-static,
+are named like ordinary nonmember variables, do not have
+the trailing underscores that data members in classes have.</del></p>
 
 <pre>struct UrlTableProperties {
-  <del>std::string name;</del>
-  <strong>std::string name;</strong>
+  std::string name;
   <del>int num_entries;</del>
   <strong>int numEntries;</strong>
-  <del>static Pool&lt;UrlTableProperties&gt;* pool;</del>
-  <strong>static Pool&lt;UrlTableProperties&gt;* pool;</strong>
+  static Pool&lt;UrlTableProperties&gt;* pool;
 };
 </pre>
 
